@@ -1,16 +1,11 @@
 {
   "name": "todolistgetir",
   "version": "0.1.0",
-  "engines": {
-    "node": "12.x"
-  },
   "private": true,
   "scripts": {
-    "heroku-postbuild": "npm install",
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
-    "start": "node server.js",
-    "start:original": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "axios": "^0.21.0",
