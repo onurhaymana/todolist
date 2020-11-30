@@ -126,6 +126,7 @@ function Todo({ notes }) {
         <Head>
             <title>Built For Getir | Sample TO DO List</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         </Head>
         <div className="todo-container">
             <div className="header">{tasksRemaining ? "" : "No "}Pending tasks ({tasksRemaining ? tasksRemaining : "✅"})</div>
