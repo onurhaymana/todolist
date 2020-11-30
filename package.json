@@ -8,6 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.21.0",
+    "cors": "^2.8.5",
+    "mongoose": "^5.10.18",
     "next": "10.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1"

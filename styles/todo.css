@@ -1,0 +1,76 @@
+ 
+    @font-face {
+      font-family: AvenirNext;
+      src: url(https://www.getir.com/css/fonts/AvenirNext-Regular.ttf);
+      }
+
+     body {
+      background: url(https://www.getir.com/images/doodle.png) repeat fixed;
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-repeat: repeat;
+      font-family: 'Avenir', sans-serif;
+    }
+
+    .header {
+      margin: 0.5em;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .todo-container {
+      background:#ffd00b;
+      width: 40vw;
+      margin: 10em auto;
+      border-radius: 15px;
+      padding: 20px 10px;
+      color: white;
+      border: 3px solid rgb(36, 110, 194);
+    }
+
+    .task {
+      border: 1px solid white;
+      border-radius: 5px;
+      padding: 0.5em;
+      margin: 0.5em;
+      overflow: hidden;
+    }
+
+    .task button{
+      background: rgb(12, 124, 251);
+      border-radius: 5px;
+      margin: 0px 5px;
+      padding: 3px 5px;
+      border: none;
+      cursor: pointer;
+      color: white;
+      float: right;
+    }
+
+    .create-task input[type=text] {
+      margin: 2.5em 2em;
+      width: 80%;
+      outline: none;
+      border: none;
+      padding: 0.7em;
+    }
+
+    .create-task button {
+      display:none;
+      margin: auto;
+      background: rgb(14, 173, 61);
+      border-radius: 5px;
+      padding: 3px 5px;
+      border: none;
+      cursor: pointer;
+      color: white;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .todo-container {
+        width: 100vw;
+      }
+      .create-task button {
+        display:block;
+      }
+    }
