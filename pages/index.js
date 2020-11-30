@@ -49,7 +49,7 @@ function Todo({ notes }) {
         setTasks(newTasks);
 
         try {
-            const added = await fetch(`http://localhost:3000/api/todos`, {
+            const added = await fetch(`/api/todos`, {
                 method: 'POST',
                 headers: {
                     "Accept": "application/json",
@@ -73,7 +73,7 @@ function Todo({ notes }) {
             setTasks(newTasks);
 
             try {
-                const uncomplated = await fetch(`http://localhost:3000/api/todos/${id}`, {
+                const uncomplated = await fetch(`/api/todos/${id}`, {
                     method: 'PUT',
                     headers: {
                         "Accept": "application/json",
@@ -91,7 +91,7 @@ function Todo({ notes }) {
             setTasks(newTasks);
 
             try {
-                const uncomplated = await fetch(`http://localhost:3000/api/todos/${id}`, {
+                const uncomplated = await fetch(`/api/todos/${id}`, {
                     method: 'PUT',
                     headers: {
                         "Accept": "application/json",
@@ -112,7 +112,7 @@ function Todo({ notes }) {
         setTasks(newTasks);
 
         try {
-            const deleted = await fetch(`http://localhost:3000/api/todos/${id}`, {
+            const deleted = await fetch(`/api/todos/${id}`, {
                 method: "Delete"
             });
 
@@ -149,7 +149,7 @@ function Todo({ notes }) {
 }
 
 Todo.getInitialProps = async () => {
-    const res = await fetch('http://localhost:3000/api/todos');
+    const res = await fetch('/api/todos');
     const { data } = await res.json();
   
     return { notes: data }
