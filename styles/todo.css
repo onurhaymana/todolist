@@ -47,12 +47,13 @@
       float: right;
     }
 
-    .create-task input[type=text] {
-      margin: 2.5em 2em;
-      width: 80%;
+    .create-task input[type=text], input[type=datetime-local] {
+      margin: auto;
+      width: 65%;
       outline: none;
       border: none;
       padding: 0.7em;
+      display: block;
     }
 
     .create-task button {
